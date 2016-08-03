@@ -1,0 +1,304 @@
+
+
+/* Demo Styles */
+
+body
+{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    background: #F7F8FA;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin-top: 1em;
+    padding-top: 1em;
+    font-family: Roboto Condensed;
+}
+
+h1,
+h2,
+strong
+{
+    color: #333;
+}
+
+.site-header
+{
+    background-color: #263d36;
+    background-image: url('../gfx/c2a9-brian-matiash_20110102-img_8104-edit4.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    text-align: center;
+    max-width: none;
+}
+
+.site-header img
+{
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+    border-radius: 50%;
+    border: none !important;
+}
+
+.site-header h1
+{
+    color: white;
+    font-size: 2.688em;
+    font-weight: normal;
+    font-family: Roboto Condensed;
+    text-align: center;
+    line-height: 1.1em;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+    padding: 0;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    display: inline-block;
+}
+
+.button
+{
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    border-radius: 290486px;
+    display: inline-block;
+}
+
+.site-header .button
+{
+    border: 1px solid #0298CC;
+    color: white;
+}
+
+.site-header .button:hover
+{
+    background: #0298CC;
+}
+
+code,
+pre
+{
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+}
+
+code
+{
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+pre
+{
+    padding: 1em;
+    border-left: 2px solid #69c;
+}
+
+a
+{
+    color: #0298CC;
+    text-decoration: none;
+}
+
+.site-inner
+{
+    margin: 0 auto;
+    max-width: 55em;
+    padding: 2em 2em 4em;
+    position: relative;
+    bottom: 60px;
+    background: white;
+    border-bottom: 1px solid  #E9E9EB;
+    border-right: 1px solid  #E9E9EB;
+    -webkit-transition: bottom 2s;
+    transition: bottom 2s;
+    border-top: 1px solid  #E9E9EB;
+    border-left: 1px solid  #E9E9EB;
+    border-radius: 4px;
+}
+
+.footer
+{
+    margin: 0 auto;
+    max-width: 55em;
+    text-align: center;
+    padding: 2em 2em 4em;
+}
+
+.entry-footer a
+{
+    display: inline-block;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    border-radius: 290486px;
+    border: 1px solid #0298CC;
+    color: #333;
+    font-size: 0.8em;
+    padding: 1em 3em;
+}
+
+.entry-footer a:hover
+{
+    background: #0298CC;
+    color: white;
+}
+
+.img
+{
+    height: auto;
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.left
+{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.right
+{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.lead
+{
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: Roboto Condensed;
+}
+
+.entry-footer
+{
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 2em 0em;
+    text-align: center;
+}
+
+.entry-header
+{
+}
+
+.site-content
+{
+}
+
+.entry-content
+{
+}
+
+.entry-meta
+{
+}
+
+.dimmer
+{
+    background-color: rgba(17, 18, 19, .6);
+    padding: 10vw 2em;
+}
+
+.footer-headings
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1.2em;
+}
+
+.footer-paragraph
+{
+    margin-top: 5px;
+}
+
+quote
+{
+}
+
+blockquote
+{
+    border-left: 3px solid #E3E3E3;
+    padding-left: 15px;
+    color: #9f9f9f;
+}
+
+blockquote strong
+{
+    color: #8b8b8b;
+}
+
+p
+{
+}
+
+@media (max-width:895px)
+{
+    .site-inner
+    {
+        bottom: 0px;
+        -webkit-transition: bottom 0.5s;
+        transition: bottom 0.5s;
+        position: relative;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width:568px)
+{
+    .entry-footer a
+    {
+        display: block;
+    }
+    .left
+    {
+        float: none;
+    }
+    .right
+    {
+        float: none;
+    }
+    .site-inner
+    {
+        padding: 0em 1em 0em;
+    }
+}
+
+@media (max-width:320px)
+{
+    .site-header h1
+    {
+        font-size: 2em;
+    }
+    .site-header img
+    {
+        width: 60px;
+        height: 60px;
+    }
+    .site-inner
+    {
+        padding: 0em 1em;
+    }
+}
+
