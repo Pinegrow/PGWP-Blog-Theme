@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: Nunito;
+    font-family: 'Nunito', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 1.6em;
     color: #323b40;
     margin: 0;
@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6
 {
     margin-top: 1em;
     padding-top: 1em;
-    font-family: Karla;
+    font-family: 'Karla', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h1,
@@ -29,7 +29,7 @@ strong
 .site-header
 {
     background-color: #263d36;
-    background-image: url('../gfx/c2a9-brian-matiash_20110102-img_8104-edit4.jpg');
+    background-image: url('../gfx/pg_blog_header.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ strong
     color: white;
     font-size: 2.688em;
     font-weight: 700;
-    font-family: Karla;
+    font-family: 'Karla', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
     line-height: 1.1em;
     font-style: normal;
@@ -188,7 +188,7 @@ a
 {
     font-size: 1.5em;
     font-weight: 300;
-    font-family: Roboto;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 1.3em;
 }
 
