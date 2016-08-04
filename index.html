@@ -8,9 +8,10 @@
         <meta name="author" content="">
         <title>New page</title>
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,300">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300">
         <link href="css/wp_core.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300,700">
     </head>
     <body wp-body-class>
         <header id="masthead" wp-featured-bck wp-featured-bck-size="full" wp-loop wp-loop-ignore-sticky="true" wp-loop-post-type="post" class="site-header">
@@ -20,17 +21,22 @@
                         <img src="gfx/CO6kS7AZ.png" />
                     </a>
                 </nav>
-                <h1 wp-the-title>Title of the Publication</h1>
+                <div class="site-header-title">
+                    <h1 wp-the-title>Title of the Publication</h1>
+                    <div class="site-header-meta">
+                        <span wp-the-category wp-the-category-set="content" style="display: inline-block;">CATEGORY</span> | 
+                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" style="display: inline-block;">DATE</span>
+                    </div>
+                </div>
                 <br />
-                <a href="" class="button" wp-href="author_posts">by <span wp-the-author wp-the-author-set="content">Emmanuel ARNOUD</span></a>
+                <a href="" class="button" wp-href="author_posts"><span wp-the-author wp-the-author-set="content">Emmanuel ARNOUD</span></a>
             </div>
         </header>
         <main wp-site-content id="main" class="site-inner site-content">
             <article wp-loop wp-loop-ignore-sticky="true" wp-loop-post-type="post">
                 <header class="entry-header">
-                    <div class="lead">
-                        <p wp-the-excerpt wp-the-excerpt-set="content" wp-if-has-excerpt>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    </div>
+                    <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.
+</div>
                 </header>
                 <div class="entry-meta"></div>
                 <div wp-the-content wp-the-content-set="content" class="entry-content">

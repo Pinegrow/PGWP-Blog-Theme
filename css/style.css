@@ -1,23 +1,22 @@
 
 
-/* Demo Styles */
-
 body
 {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    line-height: 1.5;
-    color: #333;
+    font-family: Nunito;
+    line-height: 1.6em;
+    color: #323b40;
     margin: 0;
     overflow-x: hidden;
     background: #F7F8FA;
     font-size: 1em;
+    font-weight: 300;
 }
 
 h1,h2,h3,h4,h5,h6
 {
     margin-top: 1em;
     padding-top: 1em;
-    font-family: Roboto Condensed;
+    font-family: Karla;
 }
 
 h1,
@@ -53,8 +52,8 @@ strong
 {
     color: white;
     font-size: 2.688em;
-    font-weight: normal;
-    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-family: Karla;
     text-align: center;
     line-height: 1.1em;
     font-style: normal;
@@ -66,6 +65,8 @@ strong
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     display: inline-block;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .button
@@ -122,7 +123,7 @@ a
 {
     margin: 0 auto;
     max-width: 55em;
-    padding: 2em 2em 4em;
+    padding: 2em 4em 4em;
     position: relative;
     bottom: 60px;
     background: white;
@@ -151,11 +152,11 @@ a
     text-decoration: none;
     transition: none 200ms ease-out;
     transition-property: color, background;
-    border-radius: 290486px;
     border: 1px solid #0298CC;
     color: #333;
     font-size: 0.8em;
     padding: 1em 3em;
+    border-radius: 290486px;
 }
 
 .entry-footer a:hover
@@ -186,8 +187,9 @@ a
 .lead
 {
     font-size: 1.5em;
-    font-weight: 400;
-    font-family: Roboto Condensed;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 1.3em;
 }
 
 .entry-footer
@@ -217,7 +219,7 @@ a
 .dimmer
 {
     background-color: rgba(17, 18, 19, .6);
-    padding: 10vw 2em;
+    padding: 6vw 2em 11vw;
 }
 
 .footer-headings
@@ -241,16 +243,55 @@ blockquote
 {
     border-left: 3px solid #E3E3E3;
     padding-left: 15px;
-    color: #9f9f9f;
+    color: #333;
 }
 
 blockquote strong
 {
-    color: #8b8b8b;
+    color: #2e2e2e;
 }
 
 p
 {
+}
+
+.entry-content p
+{
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+.site-header-title
+{
+    margin: 0 auto;
+    max-width: 55em;
+}
+
+.post-categories
+{
+    list-style-type: none;
+}
+
+ul.post-categories
+{
+    margin: 0;
+    padding: 0;
+}
+
+.site-header-title a
+{
+    color: #85989B;
+}
+
+.site-header-meta
+{
+    color: #85989B;
+    margin-bottom: 10px;
+}
+
+.lead p
+{
+    margin-bottom: 0em;
 }
 
 @media (max-width:895px)
