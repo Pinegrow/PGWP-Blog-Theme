@@ -1,22 +1,55 @@
 
 
+/****************** CORE STUFF ******************/
+
+html
+{
+    font-size: 90%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width:55.938em)
+{
+    html
+    {
+        font-size: 100%;
+    }
+}
+
+/*html{font-size:110%;}
+@media(min-width:60em){html{font-size: 90%}}*/
+
 body
 {
-    font-family: 'Nunito', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    line-height: 1.6em;
-    color: #323b40;
+    font-size: 1em;
+    line-height: 1.58;
     margin: 0;
     overflow-x: hidden;
     background: #F7F8FA;
-    font-size: 1em;
+    letter-spacing: -.003em;
     font-weight: 300;
+    color: #323b40;
+    font-family: Sans-Serif;
+}
+
+p
+{
+    font-size: 120%;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+img
+{
+    height: auto;
+    max-width: 100%;
+    border-radius: 2px;
 }
 
 h1,h2,h3,h4,h5,h6
 {
-    margin-top: 1em;
-    padding-top: 1em;
-    font-family: 'Karla', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-top: 1.5em;
 }
 
 h1,
@@ -24,6 +57,99 @@ h2,
 strong
 {
     color: #333;
+}
+
+h1
+{
+    font-size: 270%;
+}
+
+h2
+{
+    font-size: 175%;
+    line-height: 1.04 !important;
+}
+
+h3
+{
+    font-size: 140%;
+    line-height: 1.2 !important;
+}
+
+h4
+{
+    font-size: 130%;
+}
+
+h5
+{
+    font-size: 90%;
+}
+
+h6
+{
+    font-size: 50%;
+}
+
+code,
+pre
+{
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+}
+
+code
+{
+    padding: 0.125em 0.250em;
+    vertical-align: text-bottom;
+}
+
+pre
+{
+    padding: 1em;
+    border-left: 2px solid #69c;
+}
+
+a
+{
+    color: #0298CC;
+    text-decoration: none;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+blockquote
+{
+    border-left: 3px solid #E3E3E3;
+    padding-left: 0.938em;
+    color: #333;
+}
+
+blockquote strong
+{
+    color: #2e2e2e;
+}
+
+quote
+{
+}
+
+ul, ol
+{
+    margin-left: 0 !important;
+    padding-left: 20px !important;
+}
+
+/****************** END OF CORE STUFF ******************/
+
+/****************** SITE HEADER STUFF ******************/
+
+.dimmer
+{
+    background-color: rgba(17, 18, 19, .7);
+    padding: 6vw 2em 11vw;
+    margin-bottom: 0;
 }
 
 .site-header
@@ -36,6 +162,7 @@ strong
     line-height: 1.2;
     text-align: center;
     max-width: none;
+    margin-bottom: 0;
 }
 
 .site-header img
@@ -51,220 +178,59 @@ strong
 .site-header h1
 {
     color: white;
-    font-size: 2.688em;
+    font-size: 270%;
     font-weight: 700;
-    font-family: 'Karla', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
     line-height: 1.1em;
     font-style: normal;
     font-stretch: normal;
     font-variant: normal;
     padding: 0;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
     display: inline-block;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-}
-
-.button
-{
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-    border-radius: 290486px;
-    display: inline-block;
-}
-
-.site-header .button
-{
-    border: 1px solid #0298CC;
-    color: white;
-}
-
-.site-header .button:hover
-{
-    background: #0298CC;
-}
-
-code,
-pre
-{
-    background: #f5f7f9;
-    border-bottom: 1px solid #d8dee9;
-    color: #a7adba;
-}
-
-code
-{
-    padding: 2px 4px;
-    vertical-align: text-bottom;
-}
-
-pre
-{
-    padding: 1em;
-    border-left: 2px solid #69c;
-}
-
-a
-{
-    color: #0298CC;
-    text-decoration: none;
-}
-
-.site-inner
-{
-    margin: 0 auto;
-    max-width: 55em;
-    padding: 2em 4em 4em;
-    position: relative;
-    bottom: 60px;
-    background: white;
-    border-bottom: 1px solid  #E9E9EB;
-    border-right: 1px solid  #E9E9EB;
-    -webkit-transition: bottom 2s;
-    transition: bottom 2s;
-    border-top: 1px solid  #E9E9EB;
-    border-left: 1px solid  #E9E9EB;
-    border-radius: 4px;
-}
-
-.footer
-{
-    margin: 0 auto;
-    max-width: 55em;
-    text-align: center;
-    padding: 2em 2em 4em;
-}
-
-.entry-footer a
-{
-    display: inline-block;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-    border: 1px solid #0298CC;
-    color: #333;
-    font-size: 0.8em;
-    padding: 1em 3em;
-    border-radius: 290486px;
-}
-
-.entry-footer a:hover
-{
-    background: #0298CC;
-    color: white;
-}
-
-.img
-{
-    height: auto;
-    max-width: 100%;
-    border-radius: 2px;
-}
-
-.left
-{
-    float: left;
-    margin-bottom: 10px;
-}
-
-.right
-{
-    float: right;
-    margin-bottom: 10px;
-}
-
-.lead
-{
-    font-size: 1.5em;
-    font-weight: 300;
-    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    line-height: 1.3em;
-}
-
-.entry-footer
-{
-    margin: 0 auto;
-    max-width: 50em;
-    padding: 2em 0em;
-    text-align: center;
-}
-
-.entry-header
-{
-}
-
-.site-content
-{
-}
-
-.entry-content
-{
-}
-
-.entry-meta
-{
-}
-
-.dimmer
-{
-    background-color: rgba(17, 18, 19, .6);
-    padding: 6vw 2em 11vw;
-}
-
-.footer-headings
-{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    line-height: 1.2em;
-}
-
-.footer-paragraph
-{
-    margin-top: 5px;
-}
-
-quote
-{
-}
-
-blockquote
-{
-    border-left: 3px solid #E3E3E3;
-    padding-left: 15px;
-    color: #333;
-}
-
-blockquote strong
-{
-    color: #2e2e2e;
-}
-
-p
-{
-}
-
-.entry-content p
-{
-    line-height: 1.6em;
-    font-size: 1.1em;
+    margin-bottom: 0.3em;
 }
 
 .site-header-title
 {
     margin: 0 auto;
-    max-width: 55em;
+    max-width: 70%;
+    display: block;
+}
+
+.site-header-logo
+{
+    display: inline-block;
+}
+
+.site-description
+{
+    display: inline-block;
+}
+
+.site-description h2
+{
+    color: #85989B;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: normal;
+}
+
+.site-description p
+{
+    color: #85989B;
+    font-size: 150%;
+    margin-top: 0;
+}
+
+.author-avatar
+{
+}
+
+.author-avatar .avatar
+{
+    border-radius: 50%;
 }
 
 .post-categories
@@ -275,7 +241,7 @@ p
 ul.post-categories
 {
     margin: 0;
-    padding: 0;
+    padding-left: 0 !important;
 }
 
 .site-header-title a
@@ -287,6 +253,199 @@ ul.post-categories
 {
     color: #85989B;
     margin-bottom: 10px;
+    display: block;
+}
+
+/****************** END OF SITE HEADER STUFF ******************/
+
+/****************** LINKS AND BUTTONS STUFF ******************/
+
+.small-button
+{
+    font-size: 60%;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    border-radius: 290486px;
+    display: inline-block;
+}
+
+.big-button
+{
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 290486px;
+    display: inline-block;
+    text-align: center;
+}
+
+.site-header-link
+{
+    border: 1px solid #0298CC;
+    color: white;
+}
+
+.site-header-link:hover
+{
+    background: #0298CC;
+}
+
+.article-read-more-link
+{
+    border: 1px solid #323b40;
+    background: #323b40;
+    color: white;
+}
+
+.article-read-more-link:hover
+{
+    border: 1px solid #0298CC;
+    background: #0298CC;
+    color: white;
+}
+
+.post-navigation-link
+{
+    border: 1px solid #323b40;
+    color: #333;
+}
+
+.post-navigation-link:hover
+{
+    background: #323b40;
+    color: white;
+}
+
+.left
+{
+    float: left;
+    margin-bottom: 0.625em;
+}
+
+.right
+{
+    float: right;
+    margin-bottom: 0.625em;
+}
+
+/****************** END OF LINKS AND BUTTONS STUFF ******************/
+
+/****************** FOOTER STUFF ******************/
+
+.footer
+{
+    margin: 0 auto;
+    max-width: 55em;
+    text-align: center;
+    padding: 2em 2em 4em;
+}
+
+.entry-footer
+{
+    margin: 0 auto;
+    padding: 0 0em;
+    max-width: 55em;
+}
+
+.footer-headings
+{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.2em;
+    font-size: 140%;
+}
+
+.footer-paragraph
+{
+    margin-top: 0.313em;
+    font-size: 80%;
+}
+
+/****************** END OF FOOTER STUFF ******************/
+
+/****************** ARTICLE STUFF ******************/
+
+.article
+{
+    margin: 0 auto 30px;
+    max-width: 55em;
+    background: white;
+    -webkit-transition: bottom 2s;
+    transition: bottom 2s;
+    border-bottom: 1px solid  #E9E9EB;
+    border-right: 1px solid  #E9E9EB;
+    border-top: 1px solid  #E9E9EB;
+    border-left: 1px solid  #E9E9EB;
+    border-radius: 0px;
+    box-shadow: 0 10px 6px -6px #777;
+    position: relative;
+    bottom: 3.750em;
+    padding: 3.5em 4em 3em;
+}
+
+/****************** END OF ARTICLE STUFF ******************/
+
+/* ENTRY STUFF */
+
+.entry-author
+{
+    color: #96a2ac;
+    display: inline-block;
+}
+
+.entry-hr
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 2px solid #EBF1F4;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.entry-header h2
+{
+    font-size: 175%;
+    line-height: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.entry-content p
+{
+    line-height: 1.6em;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* END OF ENTRY STUFF */
+
+/* MISC STUFF */
+
+.lead
+{
+    font-weight: 300;
+    line-height: 1.38;
+    font-size: 125%;
+    color: black;
+    margin-bottom: 1em;
 }
 
 .lead p
@@ -294,21 +453,114 @@ ul.post-categories
     margin-bottom: 0em;
 }
 
+/* META STUFF */
+
+.entry-header
+{
+}
+
+.site-content
+{
+}
+
+.entry-content
+{
+    margin-top: 0px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;
+}
+
+.entry-meta
+{
+}
+
+.article-read-more
+{
+    text-align: center;
+}
+
+.post-navigation
+{
+}
+
+.float-cleaner
+{
+    clear: both;
+}
+
+.entry-excerpt
+{
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width:895px)
 {
-    .site-inner
+    .index-inner
     {
-        bottom: 0px;
+        bottom: 0;
         -webkit-transition: bottom 0.5s;
         transition: bottom 0.5s;
         position: relative;
         border-radius: 0px;
+        box-shadow: none;
     }
+}
+
+@media (max-width:800px)
+{
+    .article
+    {
+        bottom: 0px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 5em;
+        border-top: none;
+        -webkit-transition: bottom 0.5s;
+        transition: bottom 0.5s;
+        position: relative;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .site-header
+    {
+        margin-bottom: 0;
+    }
+    .site-header-title
+    {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:790px)
+{
+/*.article
+    {
+        bottom: 0px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 5em;
+        border-top: none;
+        -webkit-transition: bottom 0.5s;
+        transition: bottom 0.5s;
+        position: relative;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .site-header
+    {
+        margin-bottom: 0;
+    }*/
 }
 
 @media (max-width:568px)
 {
-    .entry-footer a
+/*.entry-footer
+    {
+        padding: 0em 0em;
+    }*/
+    .big-button
     {
         display: block;
     }
@@ -320,10 +572,25 @@ ul.post-categories
     {
         float: none;
     }
-    .site-inner
+    .lead
     {
-        padding: 0em 1em 0em;
+        line-height: 1.35;
     }
+}
+
+@media (max-width:480px)
+{
+    .article
+    {
+        padding: 2em 1.5em 3.0em;
+        -webkit-transition: padding 0.5s;
+        transition: padding 0.5s;
+        margin-top: 0;
+    }
+/*.entry-content
+    {
+        font-size: 120%;
+    }*/
 }
 
 @media (max-width:320px)
@@ -337,9 +604,33 @@ ul.post-categories
         width: 60px;
         height: 60px;
     }
-    .site-inner
+    .article
     {
-        padding: 0em 1em;
+        padding: 1em 1em;
+        margin-top: 0;
     }
 }
 
+/* TRASH CAN */
+
+/*.article-read-more a
+{
+    display: inline-block;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    border: 1px solid #0298CC;
+    background-color: #0298CC;
+    color: white;
+    font-size: 100%;
+    padding: 1em 3em;
+    border-radius: 290486px;
+}
+
+.article-read-more a:hover
+{
+    background: white;
+    color: #0298CC;
+}*/
