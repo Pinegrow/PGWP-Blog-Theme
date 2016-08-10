@@ -16,7 +16,7 @@
         <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.js"></script> -->
     </head>
     <body wp-body-class>
-        <header id="masthead" wp-featured-bck wp-featured-bck-size="full" class="site-header" wp-featured-bck-size-use-default-header="true">
+        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true" data-pg-collapsed>
             <div class="dimmer">
                 <nav>
                     <a href="" wp-home-url wp-home-url-set="href">
@@ -25,7 +25,7 @@
                 </nav>
                 <div class="site-header-title">
                     <h1 wp-the-author-meta="nickname" wp-the-author-meta-set="content">Post or Page Title</h1>
-                    <div class="site-header-meta">
+                    <div class="site-header-meta" style="visibility: hidden">
                         <span wp-the-category wp-the-category-set="content" style="display: inline-block;">CATEGORY</span> |
                         <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" style="display: inline-block;">DATE</span>
                     </div>
@@ -36,18 +36,15 @@
                 global $post;
                 $author_id=$post->post_author;
                 </php>
-                <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
+                <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link" style="visibility: hidden"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
             </div>
         </header>
-        <div wp-site-content>
-            <main id="main" class="site-inner site-content">
-</main>
-        </div>
-        <footer class="footer">
-            <div>
-                <h2 class="footer-headings">Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
-                <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
-            </div>
+        <main id="main" class="site-inner site-content" wp-site-content>
+            <div class="pg-empty-placeholder site-inner"></div>
+        </main>
+        <footer class="site-footer footer" data-pg-collapsed>
+            <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
+            <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
         </footer>
     </body>
 </html>

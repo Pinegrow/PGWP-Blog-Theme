@@ -9,7 +9,9 @@ html
     -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width:55.938em)
+/* 768px */
+
+@media (min-width:48.063em)
 {
     html
     {
@@ -23,19 +25,18 @@ html
 body
 {
     font-size: 1em;
-    line-height: 1.58;
+    line-height: 1.6;
     margin: 0;
     overflow-x: hidden;
     background: #F7F8FA;
-    letter-spacing: -.003em;
-    font-weight: 300;
-    color: #323b40;
+    color: #333;
     font-family: Sans-Serif;
 }
 
 p
 {
     font-size: 120%;
+    margin-bottom: 1.2em !important;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -44,7 +45,7 @@ img
 {
     height: auto;
     max-width: 100%;
-    border-radius: 2px;
+    border-radius: 0px !important;
 }
 
 img:hover
@@ -146,6 +147,14 @@ ul, ol
 }
 
 /****************** END OF CORE STUFF ******************/
+
+.site-inner
+{
+    position: relative;
+    top: -3.750em;
+    margin: 0 auto 30px;
+    max-width: 55em;
+}
 
 /****************** SITE HEADER STUFF ******************/
 
@@ -266,6 +275,7 @@ ul.post-categories
 
 .small-button
 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 60%;
     letter-spacing: 0.2em;
     padding: 1em 2em;
@@ -279,6 +289,7 @@ ul.post-categories
 
 .big-button
 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 100%;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -293,6 +304,35 @@ ul.post-categories
     display: inline-block;
     text-align: center;
 }
+
+/*button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 290486px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #323b40;
+    background: #323b40;
+    color: white;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover
+{
+  border: 1px solid #0298CC;
+  background: #0298CC;
+  color: white;
+}*/
 
 .site-header-link
 {
@@ -323,6 +363,7 @@ ul.post-categories
 {
     border: 1px solid #323b40;
     color: #333;
+    background: white;
 }
 
 .post-navigation-link:hover
@@ -330,6 +371,12 @@ ul.post-categories
     background: #0298CC;
     border: 1px solid #0298CC;
     color: white;
+}
+
+.posts-navigation-link
+{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .left
@@ -348,19 +395,30 @@ ul.post-categories
 
 /****************** FOOTER STUFF ******************/
 
+.site-footer
+{
+    position: relative;
+    bottom: 35px;
+    max-width: 55em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
 .footer
 {
-    margin: 0 auto;
-    max-width: 55em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     text-align: center;
-    padding: 2em 2em 4em;
 }
 
 .entry-footer
 {
+    max-width: 55em;
     margin: 0 auto;
     padding: 0 0em;
-    max-width: 55em;
 }
 
 .footer-headings
@@ -368,8 +426,8 @@ ul.post-categories
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 0;
-    line-height: 1.2em;
     font-size: 140%;
+    line-height: 1.2em;
 }
 
 .footer-paragraph
@@ -385,7 +443,6 @@ ul.post-categories
 .article
 {
     margin: 0 auto 30px;
-    max-width: 55em;
     background: white;
     -webkit-transition: bottom 2s;
     transition: bottom 2s;
@@ -394,11 +451,11 @@ ul.post-categories
     border-top: 1px solid  #E9E9EB;
     border-left: 1px solid  #E9E9EB;
     border-radius: 0px;
-    box-shadow: 0 10px 6px -6px #dadada;
-    /*box-shadow: 0 10px 6px -6px #777;*/
-    position: relative;
-    bottom: 3.750em;
-    padding: 3.5em 4em 3em;
+    box-shadow: 0 10px 6px -9px #dadada;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 /****************** END OF ARTICLE STUFF ******************/
@@ -432,13 +489,28 @@ ul.post-categories
     margin-bottom: 10px;
 }
 
+.entry-content
+{
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+    padding-bottom: 20px;
+}
+
 .entry-content p
 {
-    line-height: 1.6em;
     margin-top: 0;
-    margin-bottom: 1.2em;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+.entry-excerpt
+{
+    margin-bottom: 0 !important;
+}
+
+.entry-excerpt p
+{
+    margin-bottom: 0 !important;
 }
 
 /* END OF ENTRY STUFF */
@@ -447,16 +519,38 @@ ul.post-categories
 
 .lead
 {
-    font-weight: 300;
-    line-height: 1.38;
-    font-size: 125%;
-    color: black;
-    margin-bottom: 1em;
+    margin-top: 0;
 }
 
 .lead p
 {
-    margin-bottom: 0em;
+    margin-top: 0.5em !important;
+    margin-bottom: 0 !important;
+    font-size: 140%;
+    font-weight: 300;
+    line-height: 1.4;
+    color: black;
+}
+
+/*.article-read-more
+{
+    text-align: center;
+}*/
+
+.post-navigation
+{
+    margin-top: 3em;
+}
+
+.float-cleaner
+{
+    clear: both;
+}
+
+.index-navigation
+{
+    margin: 15px auto 10px;
+    text-align: center;
 }
 
 /* META STUFF */
@@ -469,37 +563,20 @@ ul.post-categories
 {
 }
 
-.entry-content
-{
-    margin-top: 0px !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px !important;
-}
-
 .entry-meta
 {
 }
 
-.article-read-more
-{
-    text-align: center;
-}
-
-.post-navigation
-{
-}
-
-.float-cleaner
-{
-    clear: both;
-}
-
-.entry-excerpt
-{
-}
-
 /* TRICKS */
+
+.blog-divider
+{
+    display: block;
+    width: 61%;
+    height: 1px;
+    margin: 30px auto;
+    background-color: rgba(50, 59, 64, .2);
+}
 
 img.desaturate {
 	-webkit-filter: grayscale(100%);
@@ -512,29 +589,25 @@ img.desaturate {
 
 @media (max-width:895px)
 {
-    .index-inner
+/*body
     {
-        bottom: 0;
-        -webkit-transition: bottom 0.5s;
-        transition: bottom 0.5s;
-        position: relative;
-        border-radius: 0px;
-        box-shadow: none;
+      background: white;
+    }*/
+    .site-inner
+    {
+        position: static;
     }
-}
-
-@media (max-width:800px)
-{
+    .site-footer
+    {
+        position: static;
+        bottom: 0;
+    }
     .article
     {
-        bottom: 0px;
         margin-bottom: 0;
         margin-top: 0;
-        padding-bottom: 5em;
         border-top: none;
-        -webkit-transition: bottom 0.5s;
-        transition: bottom 0.5s;
-        position: relative;
+        border-bottom: solid 1px #E9E9EB;
         border-radius: 0;
         box-shadow: none;
     }
@@ -548,33 +621,22 @@ img.desaturate {
     }
 }
 
-@media (max-width:790px)
+@media (max-width:768px)
 {
-/*.article
+    .site-header img
     {
-        bottom: 0px;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 5em;
-        border-top: none;
-        -webkit-transition: bottom 0.5s;
-        transition: bottom 0.5s;
-        position: relative;
-        border-radius: 0;
-        box-shadow: none;
+        width: 96px;
+        height: 96px;
     }
-    .site-header
+
+    /*p
     {
-        margin-bottom: 0;
+      font-size: 125%;
     }*/
 }
 
 @media (max-width:568px)
 {
-/*.entry-footer
-    {
-        padding: 0em 0em;
-    }*/
     .big-button
     {
         display: block;
@@ -598,54 +660,35 @@ img.desaturate {
     .article
     {
         padding: 2em 1.5em 3.0em;
-        -webkit-transition: padding 0.5s;
-        transition: padding 0.5s;
         margin-top: 0;
     }
-/*.entry-content
-    {
-        font-size: 120%;
-    }*/
 }
 
 @media (max-width:320px)
 {
     .site-header h1
     {
-        font-size: 2em;
-    }
-    .site-header img
-    {
-        width: 60px;
-        height: 60px;
+        font-size: 200%;
     }
     .article
     {
-        padding: 1em 1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
         margin-top: 0;
+    }
+    .site-header img
+    {
+        width: 66px;
+        height: 66px;
     }
 }
 
 /* TRASH CAN */
 
-/*.article-read-more a
+.comments
 {
-    display: inline-block;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-    border: 1px solid #0298CC;
-    background-color: #0298CC;
-    color: white;
-    font-size: 100%;
-    padding: 1em 3em;
-    border-radius: 290486px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.article-read-more a:hover
-{
-    background: white;
-    color: #0298CC;
-}*/

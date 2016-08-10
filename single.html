@@ -16,7 +16,7 @@
         <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.js"></script> -->
     </head>
     <body wp-body-class>
-        <header id="masthead" wp-featured-bck wp-featured-bck-size="full" class="site-header" wp-featured-bck-size-use-default-header="true">
+        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" data-pg-collapsed>
             <div class="dimmer">
                 <nav>
                     <a href="" wp-home-url wp-home-url-set="href">
@@ -39,49 +39,49 @@
                 <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
             </div>
         </header>
-        <div wp-site-content>
-            <main class="site-inner site-content" id="main">
-                <article wp-loop class="article" data-pg-collapsed>
-                    <header class="entry-header" data-pg-collapsed>
-                        <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">
-                            <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                        </div>
-                    </header>
-                    <div class="entry-meta"></div>
-                    <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed>
-                        <blockquote wp-no-export>blockquote</blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                        <img src="gfx/pg_blog_post_image.jpg" class="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                        <h2>Content</h2>
-                        <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
-                        <p>Let's assume you've already finalised the content you want to publish and just created an empty style.css file, what is the <a href="#">first rule</a> you can write?</p>
-                        <h2>Centering</h2>
-                        <p>Long lines of text can be hard to parse, and thus hard to read. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
-                        <pre><code>body {
+        <main id="main" class="site-content site-inner" wp-site-content>
+            <article wp-loop class="article">
+                <header class="entry-header" data-pg-collapsed>
+                    <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">
+                        <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    </div>
+                </header>
+                <div class="entry-meta"></div>
+                <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed>
+                    <blockquote wp-no-export>blockquote</blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <img src="gfx/pg_blog_post_image.jpg" class="img">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <h2>Content</h2>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
+                    <p>Let's assume you've already finalised the content you want to publish and just created an empty style.css file, what is the <a href="#">first rule</a> you can write?</p>
+                    <h2>Centering</h2>
+                    <p>Long lines of text can be hard to parse, and thus hard to read. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
+                    <pre><code>body {
   margin: 0 auto;
   max-width: 50em;
 }</code></pre>
-                        <p>After styling the text blocks, what about styling the text itself?</p>
+                    <p>After styling the text blocks, what about styling the text itself?</p>
+                </div>
+                <div class="blog-divider"></div>
+                <div class="comments" wp-comments-template="comments.php" wp-comments-template-set="content" id="comments">
+                    <p>Comments Form</p>
+                </div>
+                <nav class="post-navigation" data-pg-collapsed wp-no-export data-pg-hidden>
+                    <div data-pg-collapsed class="left">
+                        <a href="" data-pg-collapsed wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST" class="big-button post-navigation-link"><span>PREV POST</span></a>
                     </div>
-                    <nav class="post-navigation">
-                        <div data-pg-collapsed class="left">
-                            <a href="" data-pg-collapsed wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST" class="big-button post-navigation-link"><span>PREV POST</span></a>
-                        </div>
-                        <div data-pg-collapsed class="right">
-                            <a href="" class="big-button post-navigation-link" data-pg-collapsed wp-next-post-link="%link" wp-next-post-link-link="NEXT POST"><span>NEXT POST</span></a>
-                        </div>
-                        <div data-pg-collapsed class="float-cleaner"></div>
-                    </nav>
-                </article>
-            </main>
-        </div>
-        <footer class="footer">
-            <div>
-                <h2 class="footer-headings">Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
-                <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
-            </div>
+                    <div data-pg-collapsed class="right">
+                        <a href="" class="big-button post-navigation-link" data-pg-collapsed wp-next-post-link="%link" wp-next-post-link-link="NEXT POST"><span>NEXT POST</span></a>
+                    </div>
+                    <div data-pg-collapsed class="float-cleaner"></div>
+                </nav>
+            </article>
+        </main>
+        <footer class="site-footer footer">
+            <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
+            <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
         </footer>
     </body>
 </html>
