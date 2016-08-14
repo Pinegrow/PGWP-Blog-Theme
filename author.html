@@ -4,28 +4,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="pg-blog is a Blog Theme for WordPress">
-        <meta name="author" content="Pinegrow Team">
-        <title>pg-blog</title>
+        <meta name="description" content="pg-blog is a Blog Theme for WordPress" wp-no-export>
+        <meta name="author" content="Pinegrow Team" wp-no-export>
+        <title wp-no-export>pg-blog</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/wp_core.css" rel="stylesheet" type="text/css">
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:700">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300,700"> -->
         <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" />
-        <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.js"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="css/social_icons.css" rel="stylesheet" type="text/css">
     </head>
     <body wp-body-class>
-        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true" data-pg-collapsed>
+        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true">
             <div class="dimmer">
                 <nav>
-                    <a href="" wp-home-url wp-home-url-set="href">
-                        <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
-                    </a>
+                    <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
+                    <a href="" wp-home-url wp-home-url-set="href" wp-no-export data-pg-hidden></a>
                 </nav>
                 <div class="site-header-title">
-                    <h1 wp-the-author-meta="nickname" wp-the-author-meta-set="content">Post or Page Title</h1>
-                    <div class="site-header-meta" style="visibility: hidden">
+                    <h1 wp-the-author-meta="nickname" wp-the-author-meta-set="content">Author Nickname</h1>
+                    <div class="site-header-meta" style="visibility: hidden" data-pg-collapsed>
                         <span wp-the-category wp-the-category-set="content" style="display: inline-block;">CATEGORY</span> |
                         <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" style="display: inline-block;">DATE</span>
                     </div>
@@ -40,14 +37,14 @@
             </div>
         </header>
         <main id="main" class="site-inner site-content" wp-site-content>
-            <article class="article" data-pg-collapsed>
-                <h2 data-pg-collapsed>Author Template Dev. in progress</h2>
-                <div class="author-avatar" data-pg-collapsed>
-                    <img src="file:///Users/earnoud/Desktop/PinegrowCode/placeholders/img6.jpg" data-pg-collapsed style="width: 96px; border-radius: 50%" wp-get-avatar />
+            <article class="article">
+                <div>
+                    <h2>Template Not Ready</h2>
+                    <img src="file:///Users/earnoud/Desktop/PinegrowCode/placeholders/img6.jpg" data-pg-collapsed wp-get-avatar class="avatar" />
                 </div>
-                <div class="pg-empty-placeholder" data-pg-collapsed wp-the-author-meta="description" wp-the-author-meta-set="content"></div>
-                <div class="pg-empty-placeholder" data-pg-collapsed wp-the-author-meta="user_pass" wp-no-export></div>
-                <div class="pg-empty-placeholder" data-pg-collapsed wp-the-author-meta="user_email" wp-the-author-meta-set="content"></div>
+                <div>
+                    <p wp-the-author-meta="description" wp-the-author-meta-set="content">ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                </div>
                 <header class="entry-header" data-pg-collapsed wp-no-export>
                     <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content" wp-no-export>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.
 </div>

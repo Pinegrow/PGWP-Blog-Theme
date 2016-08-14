@@ -1,4 +1,13 @@
 
+[class*="rf-"]
+{
+  outline: 2px dotted green;
+}
+
+[class]:not([class*="rf-"])
+{
+  outline: 2px dotted red;
+}
 
 /****************** CORE STUFF ******************/
 
@@ -7,6 +16,7 @@ html
     font-size: 90%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 /* 768px */
@@ -30,7 +40,7 @@ body
     overflow-x: hidden;
     background: #F7F8FA;
     color: #333;
-    font-family: Sans-Serif;
+    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 p
@@ -45,7 +55,6 @@ img
 {
     height: auto;
     max-width: 100%;
-    border-radius: 0px !important;
 }
 
 img:hover
@@ -55,6 +64,7 @@ img:hover
 h1,h2,h3,h4,h5,h6
 {
     margin-top: 1.5em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h1,
@@ -203,6 +213,7 @@ ul, ol
     -ms-word-wrap: break-word;
     word-wrap: break-word;
     margin-bottom: 0.3em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .site-header-title
@@ -235,15 +246,25 @@ ul, ol
     color: #85989B;
     font-size: 150%;
     margin-top: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .author-avatar
 {
+    width: 96px;
+    border-radius: 50%;
+    border: 3px solid #E9E9EB;
 }
 
-.author-avatar .avatar
+/*.author-avatar .avatar
 {
+}*/
+
+.avatar
+{
+    width: 96px;
     border-radius: 50%;
+    border: 3px solid #E9E9EB;
 }
 
 .post-categories
@@ -267,6 +288,7 @@ ul.post-categories
     color: #85989B;
     margin-bottom: 10px;
     display: block;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /****************** END OF SITE HEADER STUFF ******************/
@@ -364,6 +386,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     border: 1px solid #323b40;
     color: #333;
     background: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .post-navigation-link:hover
@@ -434,6 +457,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 {
     margin-top: 0.313em;
     font-size: 80%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /****************** END OF FOOTER STUFF ******************/
@@ -466,6 +490,14 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 {
     color: #96a2ac;
     display: inline-block;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.entry-author a
+{
+  color: #96a2ac;
+  border-bottom: 1px dotted #96a2ac;
+  text-decoration: none;
 }
 
 .entry-hr
@@ -530,6 +562,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     font-weight: 300;
     line-height: 1.4;
     color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /*.article-read-more
@@ -567,15 +600,21 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 {
 }
 
+.comments
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* TRICKS */
 
 .blog-divider
 {
     display: block;
-    width: 61%;
     height: 1px;
     margin: 30px auto;
-    background-color: rgba(50, 59, 64, .2);
+    width: 60%;
+    background: #E7E9EE;
 }
 
 img.desaturate {
@@ -628,8 +667,7 @@ img.desaturate {
         width: 96px;
         height: 96px;
     }
-
-    /*p
+/*p
     {
       font-size: 125%;
     }*/
@@ -687,8 +725,31 @@ img.desaturate {
 
 /* TRASH CAN */
 
-.comments
+.social-sharing
 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.share-title
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: center;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px dotted #B7BFC60;
 }

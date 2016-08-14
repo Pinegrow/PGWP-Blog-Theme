@@ -446,7 +446,7 @@ img
     height: auto;
     max-width: 100%;
     border: 1px solid #E9E9EB;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
 }
 
 table

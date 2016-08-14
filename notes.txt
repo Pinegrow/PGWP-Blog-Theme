@@ -1,3 +1,27 @@
 Headings: font-family: 'Karla', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 Body: font-family: 'Nunito', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 Lead : font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+p: 120% -> 19.2px
+
+h1: 270% -> 43.2px
+h2: 175% -> 28px
+h3: 140% -> 22.4px
+h4: 130% -> 20.8px
+h5: 90% -> 14.4px
+h6: 50% -> 8px
+
+site-header h1: 270% -> 43.2px
+site-header h1 320% : 2em
+
+site-description p: 150%
+
+small-button: 60%
+big-button: 100%
+
+footer-paragraph: 80%
+
+entry-header h2: 175%
+
+lead: 125%

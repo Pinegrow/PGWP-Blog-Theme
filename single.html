@@ -4,24 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="pg-blog is a Blog Theme for WordPress">
-        <meta name="author" content="Pinegrow Team">
-        <title>pg-blog</title>
+        <meta name="description" content="pg-blog is a Blog Theme for WordPress" wp-no-export>
+        <meta name="author" content="Pinegrow Team" wp-no-export>
+        <title wp-no-export>pg-blog</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/wp_core.css" rel="stylesheet" type="text/css">
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:700">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300,700"> -->
         <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" />
-        <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.js"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="css/social_icons.css" rel="stylesheet" type="text/css">
     </head>
     <body wp-body-class>
         <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" data-pg-collapsed>
             <div class="dimmer">
                 <nav>
-                    <a href="" wp-home-url wp-home-url-set="href">
-                        <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
-                    </a>
+                    <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
+                    <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
                 </nav>
                 <div class="site-header-title">
                     <h1 wp-the-title>Post or Page Title</h1>
@@ -39,7 +36,7 @@
                 <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
             </div>
         </header>
-        <main id="main" class="site-content site-inner" wp-site-content>
+        <main id="main" class="site-content site-inner" wp-site-content data-pg-collapsed>
             <article wp-loop class="article">
                 <header class="entry-header" data-pg-collapsed>
                     <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">
@@ -64,8 +61,22 @@
 }</code></pre>
                     <p>After styling the text blocks, what about styling the text itself?</p>
                 </div>
+                <div class="social-sharing" id="social-sharing" data-pg-collapsed>
+                    <h2 class="share-title">Share this Post on Social Media</h2>
+                    <ul class="social-icons social-icons-lg social-icons-colored social-icons-round" data-pg-collapsed>
+                        <li>
+                            <a onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo esc_url( the_permalink() ); ?>','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)" target="_blank" title="Share on Facebook" class="bg-facebook"><i class="fa fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/share?url=<?php echo esc_url( the_permalink() ); ?>;text=<?php the_title(); ?> @pinegrow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="bg-twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=<?php echo esc_url( the_permalink() ); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Google+" class="bg-google"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="blog-divider"></div>
-                <div class="comments" wp-comments-template="comments.php" wp-comments-template-set="content" id="comments">
+                <div class="comments" wp-comments-template="comments.php" wp-comments-template-set="content" id="comments" data-pg-collapsed>
                     <p>Comments Form</p>
                 </div>
                 <nav class="post-navigation" data-pg-collapsed wp-no-export data-pg-hidden>

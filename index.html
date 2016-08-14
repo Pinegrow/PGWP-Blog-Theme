@@ -4,24 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="pg-blog is a Blog Theme for WordPress">
-        <meta name="author" content="Pinegrow Team">
-        <title>pg-blog</title>
+        <meta name="description" content="pg-blog is a Blog Theme for WordPress" wp-no-export>
+        <meta name="author" content="Pinegrow Team" wp-no-export>
+        <title wp-no-export>pg-blog</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/wp_core.css" rel="stylesheet" type="text/css">
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300"> -->
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:700">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300,700"> -->
         <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" />
-        <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.js"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="css/social_icons.css" rel="stylesheet" type="text/css">
     </head>
     <body wp-body-class>
         <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true" data-pg-collapsed>
             <div class="dimmer">
                 <nav class="site-header-logo">
-                    <a href="" wp-home-url wp-home-url-set="href">
-                        <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
-                    </a>
+                    <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" title="Home" />
+                    <a href="" wp-home-url wp-home-url-set="href" title="Home" wp-no-export data-pg-hidden></a>
                 </nav>
                 <div class="site-header-title">
                     <h1 wp-site-name>Name of the Blog</h1>
@@ -45,12 +42,15 @@
                 <header class="entry-header entry-header h2" data-pg-collapsed>
                     <a href="#" wp-the-permalink-href wp-the-permalink-href-set="href"><h2 wp-the-title>Designer Feedback: Working with Pinegrow and External Applications</h2></a>
                 </header>
-                <div class="entry-author" data-pg-collapsed>Posted on
-                    <span wp-the-date wp-the-date-show-same="true" wp-the-date-set="content">DATE</span> by
-                    <span wp-the-author-meta="nickname" wp-the-author-meta-set="content">Emmanuel ARNOUD</span>
+                <div class="entry-author">Posted on
+                    <span wp-the-date wp-the-date-show-same="true" wp-the-date-set="content">DATE</span>
+                    <span> by </span>
+                    <a href="" wp-href="author_posts"><span wp-the-author-meta="nickname" wp-the-author-meta-set="content">Emmanuel ARNOUD</span></a>
                 </div>
                 <div class="entry-hr" data-pg-collapsed></div>
-                <img src="gfx/pg_blog_post_image.jpg" data-pg-collapsed wp-the-post-thumbnail="pgblog-index" wp-the-post-thumbnail-if="true" />
+                <a href="" wp-href="post_permalink">
+                    <img src="gfx/pg_blog_post_image.jpg" data-pg-collapsed wp-the-post-thumbnail="pgblog-index" wp-the-post-thumbnail-if="true" />
+                </a>
                 <div class="entry-content">
                     <div data-pg-collapsed class="entry-excerpt">
                         <p wp-the-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>

@@ -238,7 +238,7 @@ https://css-tricks.com/snippets/wordpress/add-class-to-links-generated-by-next_p
 // IMAGES MANIPULATIONS //
 
 // Set JPEG Compression Quality for Thumbnails
-add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+add_filter( 'jpeg_quality', create_function( '', 'return 80;' ) );
 
 // 1200 pixels wide by 675 pixels tall, hard crop mode
 add_image_size( 'pgblog-header', 1200, 675, true );
@@ -248,9 +248,20 @@ add_image_size( 'pgblog-index', 782 );
 
 
 // New Image Sizes in Media Selector
+// https://wpthememakeover.com/2015/01/29/how-to-add-custom-image-sizes-to-the-wordpress-media-library/
+
 function pg_blog_custom_sizes( $sizes ) {
   return array_merge( $sizes, array(
     'pgblog-index' => __( 'Medium Size for Blog Posts' ),
   ) );
 }
 add_filter( 'image_size_names_choose', 'pg_blog_custom_sizes' );
+
+// SHORTCODES
+
+// Function to add a blog divider to posts and pages
+
+  function pg_blog_divider_shortcode() {
+    return '<div class="blog-divider"></div>';
+}
+add_shortcode('divider', 'pg_blog_divider_shortcode');
