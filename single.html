@@ -17,7 +17,7 @@
         <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" data-pg-collapsed>
             <div class="dimmer">
                 <nav>
-                    <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" />
+                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
                     <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
                 </nav>
                 <div class="site-header-title">
@@ -36,14 +36,15 @@
                 <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
             </div>
         </header>
-        <main id="main" class="site-content site-inner" wp-site-content data-pg-collapsed>
-            <article wp-loop class="article">
+        <main id="main" class="site-content site-inner" wp-site-content>
+            <article wp-loop class="article" wp-the-id="post" wp-post-class>
+                <span wp-edit-post-link="Edit Post">EDIT POST</span>
+                <div class="entry-meta"></div>
                 <header class="entry-header" data-pg-collapsed>
                     <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">
                         <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
                     </div>
                 </header>
-                <div class="entry-meta"></div>
                 <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed>
                     <blockquote wp-no-export>blockquote</blockquote>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
@@ -75,12 +76,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="blog-divider"></div>
                 <div class="comments" wp-comments-template="comments.php" wp-comments-template-set="content" id="comments" data-pg-collapsed>
                     <p>Comments Form</p>
                 </div>
-                <nav class="post-navigation" data-pg-collapsed wp-no-export data-pg-hidden>
-                    <div data-pg-collapsed class="left">
+                <nav class="post-navigation" data-pg-collapsed>
+                    <div class="left">
                         <a href="" data-pg-collapsed wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST" class="big-button post-navigation-link"><span>PREV POST</span></a>
                     </div>
                     <div data-pg-collapsed class="right">

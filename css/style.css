@@ -1,5 +1,6 @@
 
-[class*="rf-"]
+
+/*[class*="rf-"]
 {
   outline: 2px dotted green;
 }
@@ -7,16 +8,22 @@
 [class]:not([class*="rf-"])
 {
   outline: 2px dotted red;
-}
+}*/
 
 /****************** CORE STUFF ******************/
 
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 html
 {
-    font-size: 90%;
+    font-size: 95%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 /* 768px */
@@ -188,7 +195,7 @@ ul, ol
     margin-bottom: 0;
 }
 
-.site-header img
+img.custom-logo
 {
     display: inline-block;
     height: 120px;
@@ -383,10 +390,9 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 .post-navigation-link
 {
-    border: 1px solid #323b40;
     color: #333;
     background: white;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: 1px solid #323b40;
 }
 
 .post-navigation-link:hover
@@ -394,12 +400,6 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     background: #0298CC;
     border: 1px solid #0298CC;
     color: white;
-}
-
-.posts-navigation-link
-{
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .left
@@ -493,11 +493,12 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.entry-author a
+a .entry-author
 {
-  color: #96a2ac;
-  border-bottom: 1px dotted #96a2ac;
-  text-decoration: none;
+    border-bottom: 1px dotted #96a2ac;
+    text-decoration: none;
+    color: #868f97;
+    font-weight: 400;
 }
 
 .entry-hr
@@ -662,7 +663,7 @@ img.desaturate {
 
 @media (max-width:768px)
 {
-    .site-header img
+    img.custom-logo
     {
         width: 96px;
         height: 96px;
@@ -716,7 +717,7 @@ img.desaturate {
         padding-right: 1em;
         margin-top: 0;
     }
-    .site-header img
+    img.custom-logo
     {
         width: 66px;
         height: 66px;
@@ -730,10 +731,10 @@ img.desaturate {
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    border: 1px solid #E5E7EE;
+    margin: 0 auto 50px;
+    max-width: 27em;
 }
 
 .share-title
@@ -753,3 +754,13 @@ img.desaturate {
     border-top: 0;
     border-bottom: 1px dotted #B7BFC60;
 }
+
+.menu
+{
+    width: 320px;
+    z-index: 999999999999;
+    position: fixed;
+    background-color: #ff0000;
+    height: 100%;
+}
+

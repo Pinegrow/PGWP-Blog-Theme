@@ -13,16 +13,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href="css/social_icons.css" rel="stylesheet" type="text/css">
     </head>
-    <body wp-body-class>
-        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true" data-pg-collapsed>
+    <body wp-body-class itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <!-- Comment -->
+        <!-- Comment -->
+        <div id="menu" class="menu" data-pg-collapsed data-pg-hidden wp-no-export>
+            <p>Paragraph</p>
+        </div>
+        <header id="masthead" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true">
             <div class="dimmer">
                 <nav class="site-header-logo">
-                    <img src="gfx/pg_blog_logo%20-%20120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" title="Home" />
+                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" title="Home" class="custom-logo" />
                     <a href="" wp-home-url wp-home-url-set="href" title="Home" wp-no-export data-pg-hidden></a>
                 </nav>
                 <div class="site-header-title">
                     <h1 wp-site-name>Name of the Blog</h1>
-                    <div class="site-header-meta">
+                    <div class="site-header-meta" data-pg-collapsed>
                         <div class="site-description">
                             <p data-pg-collapsed class="site-description site-description" wp-site-desc>A WordPress theme for Bloggers</p>
                         </div>
@@ -38,14 +43,15 @@
             </div>
         </header>
         <main id="main" class="site-content site-inner" wp-site-content>
-            <article wp-loop class="article">
-                <header class="entry-header entry-header h2" data-pg-collapsed>
+            <article wp-loop class="article" wp-the-id="post" wp-post-class data-pg-collapsed>
+                <header class="entry-header entry-header h2">
+                    <span wp-edit-post-link="Edit Post">EDIT POST</span>
                     <a href="#" wp-the-permalink-href wp-the-permalink-href-set="href"><h2 wp-the-title>Designer Feedback: Working with Pinegrow and External Applications</h2></a>
                 </header>
                 <div class="entry-author">Posted on
                     <span wp-the-date wp-the-date-show-same="true" wp-the-date-set="content">DATE</span>
                     <span> by </span>
-                    <a href="" wp-href="author_posts"><span wp-the-author-meta="nickname" wp-the-author-meta-set="content">Emmanuel ARNOUD</span></a>
+                    <a href="" wp-href="author_posts" data-pg-collapsed><span wp-the-author-meta="nickname" wp-the-author-meta-set="content" class="entry-author">Emmanuel ARNOUD</span></a>
                 </div>
                 <div class="entry-hr" data-pg-collapsed></div>
                 <a href="" wp-href="post_permalink">
@@ -65,10 +71,10 @@
             </article>
             <div class="index-navigation" data-pg-collapsed>
                 <a href="#" wp-next-posts-link="Older Posts" class="posts-navigation-link">Older Posts</a>
-                <a href="#" wp-prev-posts-link="Newer Posts" class="post-navigation-link">Newer Posts</a>
+                <a href="#" wp-prev-posts-link="Newer Posts" class="posts-navigation-link">Newer Posts</a>
             </div>
         </main>
-        <div class="site-footer footer">
+        <div class="site-footer footer" data-pg-collapsed>
             <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
             <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
         </div>

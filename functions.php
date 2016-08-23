@@ -265,3 +265,11 @@ add_filter( 'image_size_names_choose', 'pg_blog_custom_sizes' );
     return '<div class="blog-divider"></div>';
 }
 add_shortcode('divider', 'pg_blog_divider_shortcode');
+
+
+// Remove Default wp-embed
+
+function pg_blog_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'pg_blog_deregister_scripts' );

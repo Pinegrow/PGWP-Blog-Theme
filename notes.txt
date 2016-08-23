@@ -25,3 +25,6 @@ footer-paragraph: 80%
 entry-header h2: 175%
 
 lead: 125%
+
+BROWSER SYNC CONFIG
+browser-sync start --proxy pg-blog.dev --files "/Users/earnoud/Documents/Pinegrow GIT/PGWP-Blog-Theme/**/*" --no-notify --reloadDelay "2000"
