@@ -1,0 +1,29 @@
+//* ==== COLOR VARIABLES ==== */
+$black-solid: black;
+$cod-gray: #2e2e2e;
+$mine-shaft: #333333;
+$outer-space: #323b40;
+$regent-gray: #85989B;
+$oslo-grey: #868f97;
+$grey-chateau: #96a2ac;
+$aluminium: #a7adba;
+$submarine: #B7BFC6;
+$alto: #dadada;
+$mystic: #d8dee9;
+$mercury: #E3E3E3;
+$aqua-haze: #EBF1F4;
+$white-solid: #FFFFFF;
+$athens-gray: #F7F8FA;
+$blue-gray: #6699CC;
+$pacific-blue: #0298CC;
+$red-solid: #ff0000;
+$pink: pink;
+
+//* ==== UI VARIABLES ==== */
+// $bg-dimmer: rgba(17, 18, 19, .7);
+$bg-dimmer: rgba( $black-solid, .7);
+$bg-image-header: url('../gfx/pg_blog_header.jpg');
+
+//* === CUSTOMIZATION === */
+$color-main: $mine-shaft;
+$bg-main: $athens-gray;

@@ -268,6 +268,7 @@ add_shortcode('divider', 'pg_blog_divider_shortcode');
 
 
 // Remove Default wp-embed
+// or use https://wordpress.org/plugins/disable-embeds/
 
 function pg_blog_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
