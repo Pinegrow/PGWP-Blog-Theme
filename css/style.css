@@ -1,4 +1,7 @@
-html, body {
+/*==== Unnamed Group 1 ====*/
+/*==== Unnamed Group 2 ====*/
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%; }
@@ -17,7 +20,7 @@ body {
   line-height: 1.6;
   margin: 0;
   overflow-x: hidden;
-  background: #F7F8FA;
+  background: #f7f8fa;
   color: #333333;
   font-family: Georgia, Times, "Times New Roman", serif; }
 
@@ -31,7 +34,14 @@ img {
   height: auto;
   max-width: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
+img:hover { }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 1.5em;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
@@ -62,7 +72,7 @@ h6 {
 
 code,
 pre {
-  background: #F7F8FA;
+  background: #f7f8fa;
   border-bottom: 1px solid #d8dee9;
   color: #a7adba; }
 
@@ -72,23 +82,26 @@ code {
 
 pre {
   padding: 1em;
-  border-left: 2px solid #6699CC; }
+  border-left: 2px solid #6699cc; }
 
 a {
-  color: #0298CC;
+  color: #0298cc;
   text-decoration: none;
   -ms-word-wrap: break-word;
   word-wrap: break-word; }
 
 blockquote {
-  border-left: 3px solid #E3E3E3;
+  border-left: 3px solid #e3e3e3;
   padding-left: 0.938em;
   color: #333333; }
 
 blockquote strong {
   color: #2e2e2e; }
 
-ul, ol {
+quote { }
+
+ul,
+ol {
   margin-left: 0 !important;
   padding-left: 20px !important; }
 
@@ -123,7 +136,7 @@ img.custom-logo {
   border: none !important; }
 
 .site-header h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 270%;
   font-weight: 700;
   text-align: center;
@@ -150,13 +163,13 @@ img.custom-logo {
   display: inline-block; }
 
 .site-description h2 {
-  color: #85989B;
+  color: #85989b;
   margin-top: 0;
   padding-top: 0;
   font-weight: normal; }
 
 .site-description p {
-  color: #85989B;
+  color: #85989b;
   font-size: 150%;
   margin-top: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -164,7 +177,7 @@ img.custom-logo {
 .author-avatar {
   width: 96px;
   border-radius: 50%;
-  border: 3px solid #F7F8FA; }
+  border: 3px solid #f7f8fa; }
 
 /*.author-avatar .avatar
 {
@@ -172,7 +185,7 @@ img.custom-logo {
 .avatar {
   width: 96px;
   border-radius: 50%;
-  border: 3px solid #F7F8FA; }
+  border: 3px solid #f7f8fa; }
 
 .post-categories {
   list-style-type: none; }
@@ -182,10 +195,10 @@ ul.post-categories {
   padding-left: 0 !important; }
 
 .site-header-title a {
-  color: #85989B; }
+  color: #85989b; }
 
 .site-header-meta {
-  color: #85989B;
+  color: #85989b;
   margin-bottom: 10px;
   display: block;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -197,9 +210,7 @@ ul.post-categories {
   padding: 1em 2em;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: none 200ms ease-out;
   transition: none 200ms ease-out;
-  -webkit-transition-property: color, background;
   transition-property: color, background;
   border-radius: 290486px;
   display: inline-block; }
@@ -210,9 +221,7 @@ ul.post-categories {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: none 200ms ease-out;
   transition: none 200ms ease-out;
-  -webkit-transition-property: color, background;
   transition-property: color, background;
   padding-top: 10px;
   padding-right: 20px;
@@ -223,32 +232,32 @@ ul.post-categories {
   text-align: center; }
 
 .site-header-link {
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF; }
+  border: 1px solid #ffffff;
+  color: #ffffff; }
 
 .site-header-link:hover {
-  background: #0298CC;
-  border: 1px solid #0298CC; }
+  background: #0298cc;
+  border: 1px solid #0298cc; }
 
 .article-read-more-link {
   border: 1px solid #323b40;
   background: #323b40;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .article-read-more-link:hover {
-  border: 1px solid #0298CC;
-  background: #0298CC;
-  color: #FFFFFF; }
+  border: 1px solid #0298cc;
+  background: #0298cc;
+  color: #ffffff; }
 
 .post-navigation-link {
   color: #333333;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #323b40; }
 
 .post-navigation-link:hover {
-  background: #0298CC;
-  border: 1px solid #0298CC;
-  color: #FFFFFF; }
+  background: #0298cc;
+  border: 1px solid #0298cc;
+  color: #ffffff; }
 
 .left {
   float: left;
@@ -292,13 +301,13 @@ ul.post-categories {
 
 .article {
   margin: 0 auto 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-transition: bottom 2s;
   transition: bottom 2s;
-  border-bottom: 1px solid #F7F8FA;
-  border-right: 1px solid #F7F8FA;
-  border-top: 1px solid #F7F8FA;
-  border-left: 1px solid #F7F8FA;
+  border-bottom: 1px solid #f7f8fa;
+  border-right: 1px solid #f7f8fa;
+  border-top: 1px solid #f7f8fa;
+  border-left: 1px solid #f7f8fa;
   border-radius: 0px;
   box-shadow: 0 10px 6px -9px #dadada;
   padding-top: 3em;
@@ -322,7 +331,7 @@ a .entry-author {
   margin-bottom: 1em;
   border-style: solid;
   border-width: 1px;
-  border-top: 2px solid #EBF1F4;
+  border-top: 2px solid #ebf1f4;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
@@ -372,6 +381,12 @@ a .entry-author {
   margin: 15px auto 10px;
   text-align: center; }
 
+.entry-header { }
+
+.site-content { }
+
+.entry-meta { }
+
 .comments {
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -381,14 +396,13 @@ a .entry-author {
   height: 1px;
   margin: 30px auto;
   width: 60%;
-  background: #F7F8FA; }
+  background: #f7f8fa; }
 
 img.desaturate {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-filter: gray;
-          filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); }
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8, <svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); }
 
 @media (max-width: 895px) {
   .site-inner {
@@ -400,7 +414,7 @@ img.desaturate {
     margin-bottom: 0;
     margin-top: 0;
     border-top: none;
-    border-bottom: solid 1px #F7F8FA;
+    border-bottom: solid 1px #f7f8fa;
     border-radius: 0;
     box-shadow: none; }
   .site-header {
@@ -447,7 +461,7 @@ img.desaturate {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   display: block;
   padding-bottom: 30px;
-  border: 1px solid #F7F8FA;
+  border: 1px solid #f7f8fa;
   margin: 0 auto 50px;
   max-width: 27em; }
 
@@ -472,4 +486,5 @@ img.desaturate {
   position: fixed;
   background-color: #ff0000;
   height: 100%; }
+
 /*# sourceMappingURL=style.css.map */
