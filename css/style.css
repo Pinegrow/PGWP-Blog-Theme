@@ -1,5 +1,7 @@
-/*==== Unnamed Group 1 ====*/
-/*==== Unnamed Group 2 ====*/
+/*==== COLOR VARIABLES ====*/
+/*==== UI VARIABLES ====*/
+/*==== CUSTOMIZATION ====*/
+/*==== FONTS VARIABLES ====*/
 html,
 body {
   margin: 0;
@@ -404,6 +406,39 @@ img.desaturate {
   filter: gray;
   filter: url("data:image/svg+xml;utf8, <svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); }
 
+.social-sharing {
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: block;
+  padding-bottom: 30px;
+  border: 1px solid #f7f8fa;
+  margin: 0 auto 50px;
+  max-width: 27em;
+  /* pg-uncollapse:false*/ }
+
+.share-title {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0; }
+
+.menu {
+  width: 320px;
+  z-index: 999999999999;
+  position: fixed;
+  background-color: #ff0000;
+  height: 100%;
+  /* pg-uncollapse:false*/ }
+
 @media (max-width: 895px) {
   .site-inner {
     position: static; }
@@ -456,35 +491,5 @@ img.desaturate {
     height: 66px; } }
 
 /* TRASH CAN */
-.social-sharing {
-  text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  display: block;
-  padding-bottom: 30px;
-  border: 1px solid #f7f8fa;
-  margin: 0 auto 50px;
-  max-width: 27em; }
-
-.share-title {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 100%;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  display: inline-block;
-  text-align: center;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0; }
-
-.menu {
-  width: 320px;
-  z-index: 999999999999;
-  position: fixed;
-  background-color: #ff0000;
-  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
+@charset 'utf-8';
 @import "colors";
 @import "fonts";
-// @import "misc";
 
-// CORE STUFF
+// CORE SETTINGS
 
 html,
 body {
@@ -16,8 +16,6 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-
-// 768px
 
 @media (min-width: 48.063em) {
   html {
@@ -289,35 +287,6 @@ ul.post-categories {
   text-align: center;
 }
 
-// button,
-// input[type="button"],
-// input[type="reset"],
-// input[type="submit"] {
-//     font-size: 100%;
-//     letter-spacing: 0.2em;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     transition: none 200ms ease-out;
-//     transition-property: color, background;
-//     padding-top: 10px;
-//     padding-right: 20px;
-//     padding-bottom: 10px;
-//     padding-left: 20px;
-//     border-radius: 290486px;
-//     display: inline-block;
-//     text-align: center;
-//     border: 1px solid $outer-space;
-//     background: $outer-space;
-//     color: $white-solid;
-// }
-//
-// button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover
-// {
-//   border: 1px solid $pacific-blue;
-//   background: $pacific-blue;
-//   color: $white-solid;
-// }
-
 .site-header-link {
   border: 1px solid $white-solid;
   color: $white-solid;
@@ -549,6 +518,43 @@ img.desaturate {
   filter: url("data:image/svg+xml;utf8, <svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
 }
 
+.social-sharing {
+  text-align: center;
+  font-family: $font-main-sans-serif;
+  display: block;
+  padding-bottom: 30px;
+  border: 1px solid $athens-gray;
+  margin: 0 auto 50px;
+  max-width: 27em;
+  /* pg-uncollapse:false*/
+}
+
+.share-title {
+  font-family: $font-main-sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  // border-bottom: 1px dotted $submarine;
+}
+
+.menu {
+  width: 320px;
+  z-index: 999999999999;
+  position: fixed;
+  background-color: $red-solid;
+  height: 100%;
+  /* pg-uncollapse:false*/
+}
+
 // MEDIA QUERIES
 
 @media (max-width: 895px) {
@@ -636,41 +642,4 @@ img.desaturate {
     width: 66px;
     height: 66px;
   }
-}
-
-/* TRASH CAN */
-
-.social-sharing {
-  text-align: center;
-  font-family: $font-main-sans-serif;
-  display: block;
-  padding-bottom: 30px;
-  border: 1px solid $athens-gray;
-  margin: 0 auto 50px;
-  max-width: 27em;
-}
-
-.share-title {
-  font-family: $font-main-sans-serif;
-  font-size: 100%;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  display: inline-block;
-  text-align: center;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  // border-bottom: 1px dotted $submarine;
-}
-
-.menu {
-  width: 320px;
-  z-index: 999999999999;
-  position: fixed;
-  background-color: $red-solid;
-  height: 100%;
 }

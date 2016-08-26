@@ -1,8 +1,8 @@
-//* ==== COLOR VARIABLES ==== */
+/*==== COLOR VARIABLES ====*/
 $black-solid: black;
 $cod-gray: #2e2e2e;
-$mine-shaft: #333333;
 $outer-space: #323b40;
+$mine-shaft: #333333;
 $regent-gray: #85989b;
 $oslo-grey: #868f97;
 $grey-chateau: #96a2ac;
@@ -19,13 +19,10 @@ $pacific-blue: #0298cc;
 $red-solid: #ff0000;
 $pink: pink;
 
-//* ==== UI VARIABLES ==== */
-// $bg-dimmer: rgba(17, 18, 19, .7);
-/*==== Unnamed Group 1 ====*/
+/*==== UI VARIABLES ====*/
 $bg-dimmer: rgba( $black-solid, .7);
 $bg-image-header: url('../gfx/pg_blog_header.jpg');
 
-//* === CUSTOMIZATION === */
-/*==== Unnamed Group 2 ====*/
+/*==== CUSTOMIZATION ====*/
 $color-main: $mine-shaft;
 $bg-main: $athens-gray;
