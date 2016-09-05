@@ -34,8 +34,8 @@ body {
 }
 
 p {
-  font-size: 120%;
-  margin-bottom: 1.2em !important;
+  font-size: 130%;
+  margin-bottom: 1.6em;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
@@ -115,9 +115,15 @@ a {
 }
 
 blockquote {
-  border-left: 3px solid $mercury;
+  border-left: 4px solid $regent-gray;
   padding-left: 0.938em;
-  color: $mine-shaft;
+  margin-left: 0em !important;
+}
+
+blockquote p {
+    font-size: 115%;
+    color: lighten($mine-shaft, 5%);
+    letter-spacing: 0.1px
 }
 
 blockquote strong {
@@ -429,16 +435,18 @@ a .entry-author {
   margin-bottom: 10px;
 }
 
+// 28/08/2016 // Removed  !important on .entry-content & .entry-content p
+
 .entry-content {
-  margin-top: 2em !important;
-  margin-bottom: 2em !important;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding-bottom: 20px;
 }
 
 .entry-content p {
   margin-top: 0;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .entry-excerpt {
@@ -503,12 +511,18 @@ a .entry-author {
 
 // TRICKS
 
+.wp-caption-text {
+  font-family: $font-main-sans-serif;
+  font-size: 90%;
+  color: $mine-shaft;
+}
+
 .blog-divider {
   display: block;
   height: 1px;
   margin: 30px auto;
   width: 60%;
-  background: $athens-gray;
+  background: $alto;
 }
 
 img.desaturate {
@@ -554,6 +568,13 @@ img.desaturate {
   height: 100%;
   /* pg-uncollapse:false*/
 }
+
+.blop {
+  width: 100% !important;
+  z-index: 0 !important;
+  /* pg-uncollapse:true*/
+}
+
 
 // MEDIA QUERIES
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-master-page wp-site-master-page="index.html">
+<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-master-page wp-site-master-page="index.html" wp-site-preview-url="http://pg-blog.dev/a-short-summary-of-my-current-webdesign-process/">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +16,21 @@
     <body wp-body-class>
         <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header">
             <div class="dimmer">
-                <nav>
+                <nav data-pg-collapsed>
                     <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
                     <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
                 </nav>
-                <div class="site-header-title">
+                <span wp-if-is-sticky>FEATURED POST</span>
+                <div class="site-header-title" data-pg-collapsed>
                     <h1 wp-the-title>Post or Page Title</h1>
-                    <div class="site-header-meta">
-                        <span wp-the-category wp-the-category-set="content" style="display: inline-block;">CATEGORY</span> |
-                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" style="display: inline-block;">DATE</span>
+                    <div class="site-header-meta" id="header-meta">
+                        <ul class="post-categories" wp-the-category>
+                            <li>
+                                <a href="http://pg-blog.dev/category/edge-case-2/" rel="category tag">Pinegrow</a>
+                            </li>
+                        </ul>
+                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" class="thedate">August 7, 2016</span>
+                        <br />
                     </div>
                 </div>
                 <br />

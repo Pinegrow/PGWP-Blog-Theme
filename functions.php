@@ -147,6 +147,17 @@ endif;
 
     /* Pinegrow generated Include Resources End */
 
+    // Change the default image settings
+    // http://writenowdesign.com/blog/wordpress/wordpress-how-to/change-wordpress-default-image-alignment-link-type/
+
+    add_action( 'after_setup_theme', 'pg_blog_default_image_settings' );
+
+    function pg_blog_default_image_settings() {
+        update_option( 'image_default_align', 'center' );
+        update_option( 'image_default_link_type', 'none' );
+        update_option( 'image_default_size', 'large' );
+    }
+
     // Set Theme Content Width http://codex.wordpress.org/Content_Width //
 
     if ( ! isset( $content_width ) )
@@ -274,3 +285,34 @@ function pg_blog_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'pg_blog_deregister_scripts' );
+
+// Filter to replace the [caption] shortcode text with HTML5 compliant code
+// @return text HTML content describing embedded figure
+// http://wordpress.stackexchange.com/questions/107358/make-wordpress-image-captions-responsive
+// https://developer.wordpress.org/reference/functions/add_filter/#Example
+
+add_filter('img_caption_shortcode', 'pg_blog_img_caption_shortcode_filter',10,3);
+
+function pg_blog_img_caption_shortcode_filter($val, $attr, $content = null)
+{
+    extract(shortcode_atts(array(
+        'id'    => '',
+        'align' => '',
+        'width' => '',
+        'caption' => ''
+    ), $attr));
+
+    if ( 1 > (int) $width || empty($caption) )
+        return $val;
+
+    $capid = '';
+    if ( $id ) {
+        $id = esc_attr($id);
+        $capid = 'id="figcaption_'. $id . '" ';
+        $id = 'id="' . $id . '" aria-labelledby="figcaption_' . $id . '" ';
+    }
+
+    return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+    . do_shortcode( $content ) . '<figcaption ' . $capid
+    . 'class="wp-caption-text">' . $caption . '</figcaption></figure>';
+}

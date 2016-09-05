@@ -18,7 +18,7 @@
             <div class="dimmer">
                 <nav>
                     <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
-                    <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
+                    <a href="" wp-home-url wp-home-url-set="href" wp-no-export></a>
                 </nav>
                 <div class="site-header-title">
                     <h1 wp-the-title>Post or Page Title</h1>
@@ -38,15 +38,13 @@
         </header>
         <main id="main" class="site-content site-inner" wp-site-content>
             <article wp-loop class="article" wp-post-class wp-the-id="post">
-                <span wp-edit-post-link="Edit Post">EDIT POST</span>
-                <header class="entry-header" data-pg-collapsed>
-                    <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content">
-                        <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    </div>
+                <span wp-edit-post-link="Edit Page" data-pg-collapsed><a href="#">Edit Post</a></span>
+                <header class="entry-header" id="entry-header">
+                    <em wp-if-has-excerpt wp-call-function="get_the_excerpt();" wp-call-function-set="content" wp-call-function-echo="true"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</em>
                 </header>
-                <div class="entry-meta"></div>
-                <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed>
-                    <blockquote wp-no-export>blockquote</blockquote>
+                <div wp-the-content wp-the-content-set="content" class="entry-content" id="entry-content">
+                    <blockquote wp-no-export>blockquote                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.
+</blockquote>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
                     <img src="gfx/pg_blog_post_image.jpg" class="img">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
@@ -63,8 +61,8 @@
                     <p>After styling the text blocks, what about styling the text itself?</p>
                 </div>
                 <div class="entry-meta"></div>
-                <footer class="entry-footer">
-                    <nav wp-no-export data-pg-collapsed>
+                <footer class="entry-footer" data-pg-collapsed>
+                    <nav wp-no-export>
                         <div class="left">
                             <a href="" wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST">PREV POST</a>
                         </div>
@@ -76,7 +74,7 @@
             </article>
         </main>
         <footer class="site-footer footer">
-            <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
+            <h2 class="footer-headings">Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
             <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
         </footer>
     </body>
