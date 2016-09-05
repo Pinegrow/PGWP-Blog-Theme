@@ -137,6 +137,10 @@ ol {
 
 // SITE HEADER
 
+#masthead h1 {
+  margin-top: 1em;
+}
+
 .dimmer {
   background-color: $bg-dimmer;
   padding: 6vw 2em 11vw;
@@ -186,6 +190,15 @@ img.custom-logo {
 
 .site-header-logo {
   display: inline-block;
+}
+
+.sticky-badge {
+  margin-top: 5px;
+  padding: 5px;
+  // display: inline;
+  color: $regent-gray;
+  font-family: $font-main-sans-serif;
+
 }
 
 .site-header h1 {
@@ -687,4 +700,9 @@ img.desaturate {
   position: fixed;
   background-color: $red-solid;
   height: 100%;
+}
+
+#author-bio .avatar {
+    border-radius: 0;
+    width: 96px;
 }

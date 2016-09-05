@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-site-master-page="master-page-author.html">
+<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-site-master-page="index.html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +9,25 @@
         <title wp-no-export>pg-blog</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/wp_core.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" />
+        <!-- <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" /> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href="css/social_icons.css" rel="stylesheet" type="text/css">
     </head>
-    <body wp-body-class>
-        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true">
+    <body wp-body-class itemscope="itemscope" itemtype="http://schema.org/WebPage">
+        <!-- Comment -->
+        <!-- Comment -->
+        <header id="masthead" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header" wp-featured-bck-size-use-default-header="true">
             <div class="dimmer">
-                <nav>
-                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
-                    <a href="" wp-home-url wp-home-url-set="href" wp-no-export data-pg-hidden></a>
+                <nav class="site-header-logo">
+                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" title="Home" class="custom-logo" />
+                    <a href="" wp-home-url wp-home-url-set="href" title="Home" wp-no-export data-pg-hidden></a>
                 </nav>
                 <div class="site-header-title">
-                    <h1 wp-the-author-meta="nickname" wp-the-author-meta-set="content">Author Nickname</h1>
-                    <div class="site-header-meta" style="visibility: hidden" data-pg-collapsed>
-                        <span wp-the-category wp-the-category-set="content" style="display: inline-block;">CATEGORY</span> |
-                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" style="display: inline-block;">DATE</span>
+                    <h1 wp-site-name>Name of the Blog</h1>
+                    <div class="site-header-meta" data-pg-collapsed>
+                        <div class="site-description">
+                            <p data-pg-collapsed class="site-description site-description" wp-site-desc>A WordPress theme for Bloggers</p>
+                        </div>
                     </div>
                 </div>
                 <br />
@@ -33,56 +36,50 @@
                 global $post;
                 $author_id=$post->post_author;
                 </php>
-                <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link" style="visibility: hidden"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
+                <a href="" wp-href="author_posts" wp-href-author-id="1" class="small-button site-header-link"><span>A BLOG BY </span><span wp-the-author-meta="nickname" wp-the-author-meta-id="1" wp-the-author-meta-set="content">Emmanuel ARNOUD</span></a>
             </div>
         </header>
-        <main id="main" class="site-inner site-content" wp-site-content>
-            <article class="article">
+        <main id="main" class="site-content site-inner" wp-site-content>
+            <article class="article" data-pg-collapsed id="author-bio">
                 <div data-pg-collapsed>
-                    <h2>Template Not Ready</h2>
-                    <img src="file:///Users/earnoud/Desktop/PinegrowCode/placeholders/img6.jpg" data-pg-collapsed wp-get-avatar class="avatar" />
-                </div>
-                <div>
+                    <img data-pg-collapsed wp-call-function="userphoto_the_author_photo()" src="gfx/Batman.jpg" />
                     <p wp-the-author-meta="description" wp-the-author-meta-set="content">ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
                 </div>
-                <header class="entry-header" data-pg-collapsed wp-no-export>
-                    <div class="lead" wp-the-excerpt wp-if-has-excerpt wp-the-excerpt-set="content" wp-no-export>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.
-</div>
-                </header>
-                <div class="entry-meta" wp-no-export></div>
-                <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed wp-no-export>
-                    <blockquote wp-no-export>blockquote</blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    <img src="gfx/pg_blog_post_image.jpg" class="img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    <h2>Content</h2>
-                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
-                    <p>Let's assume you've already finalised the content you want to publish and just created an empty style.css file, what is the <a href="#">first rule</a> you can write?</p>
-                    <h2>Centering</h2>
-                    <p>Long lines of text can be hard to parse, and thus hard to read. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
-                    <pre><code>body {
-  margin: 0 auto;
-  max-width: 50em;
-}</code></pre>
-                    <p>After styling the text blocks, what about styling the text itself?</p>
-                </div>
-                <div class="entry-meta" wp-no-export></div>
-                <footer class="entry-footer" data-pg-collapsed wp-no-export>
-                    <nav wp-no-export data-pg-collapsed>
-                        <div class="left">
-                            <a href="" wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST">PREV POST</a>
-                        </div>
-                        <div class="right">
-                            <a href="" wp-next-post-link="%link" wp-next-post-link-link="NEXT POST">NEXT POST</a>
-                        </div>
-                    </nav>
-                </footer>
             </article>
+            <article wp-loop class="article" wp-post-class id="posts" data-pg-collapsed wp-the-id="post">
+                <header class="entry-header entry-header h2">
+                    <span wp-edit-post-link="Edit Post"><a href="#">Edit Post</a></span>
+                    <a href="#" wp-the-permalink-href wp-the-permalink-href-set="href"><h2 wp-the-title>Designer Feedback: Working with Pinegrow and External Applications</h2></a>
+                </header>
+                <div class="entry-author">Posted on
+                    <span wp-the-date wp-the-date-show-same="true" wp-the-date-set="content">DATE</span>
+                    <span> by </span>
+                    <a href="" wp-href="author_posts" data-pg-collapsed><span wp-the-author-meta="nickname" wp-the-author-meta-set="content" class="entry-author">Emmanuel ARNOUD</span></a>
+                </div>
+                <div class="entry-hr" data-pg-collapsed></div>
+                <a href="" wp-href="post_permalink">
+                    <img src="gfx/pg_blog_post_image.jpg" data-pg-collapsed wp-the-post-thumbnail="pgblog-index" wp-the-post-thumbnail-if="true" />
+                </a>
+                <div class="entry-content">
+                    <div data-pg-collapsed class="entry-excerpt">
+                        <p wp-the-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    </div>
+                </div>
+                <nav class="article-read-more" data-pg-collapsed>
+                    <a href="" data-pg-collapsed wp-post-permalink wp-post-permalink-set="href" class="big-button article-read-more-link left">Read More</a>
+                </nav>
+                <div data-pg-collapsed class="float-cleaner"></div>
+                <footer class="entry-footer">
+</footer>
+            </article>
+            <div class="index-navigation" data-pg-collapsed>
+                <a href="#" wp-next-posts-link="Older Posts" class="posts-navigation-link">Older Posts</a>
+                <a href="#" wp-prev-posts-link="Newer Posts" class="posts-navigation-link">Newer Posts</a>
+            </div>
         </main>
-        <footer class="site-footer footer" data-pg-collapsed>
+        <div class="site-footer footer" data-pg-collapsed>
             <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
             <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
-        </footer>
+        </div>
     </body>
 </html>

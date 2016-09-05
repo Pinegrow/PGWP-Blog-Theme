@@ -122,17 +122,14 @@ if ( ! function_exists( 'pg_blog_enqueue_scripts' ) ) :
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', false, null, 'all');
 
-    wp_deregister_style( 'style-1' );
-    wp_enqueue_style( 'style-1', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400', false, null, 'all');
-
-    wp_deregister_style( 'style-2' );
-    wp_enqueue_style( 'style-2', 'http://fonts.googleapis.com/css?family=Roboto:400,500,300', false, null, 'all');
-
-    wp_deregister_style( 'style-3' );
-    wp_enqueue_style( 'style-3', 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700', false, null, 'all');
-
     wp_deregister_style( 'wp_core' );
     wp_enqueue_style( 'wp_core', get_template_directory_uri() . '/css/wp_core.css', false, null, 'all');
+
+    wp_deregister_style( 'fontawesome' );
+    wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css', false, null, 'all');
+
+    wp_deregister_style( 'social_icons' );
+    wp_enqueue_style( 'social_icons', get_template_directory_uri() . '/css/social_icons.css', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
@@ -316,3 +313,10 @@ function pg_blog_img_caption_shortcode_filter($val, $attr, $content = null)
     . do_shortcode( $content ) . '<figcaption ' . $capid
     . 'class="wp-caption-text">' . $caption . '</figcaption></figure>';
 }
+
+// https://premium.wpmudev.org/blog/enable-or-disable-all-html-tags-in-wordpress-author-biography-profiles/
+//disable WordPress sanitization to allow more than just $allowedtags from /wp-includes/kses.php
+remove_filter('pre_user_description', 'wp_filter_kses');
+
+//add sanitization for WordPress posts
+add_filter( 'pre_user_description', 'wp_filter_post_kses');

@@ -18,16 +18,17 @@ $blue-gray: #6699cc;
 $pacific-blue: #0298cc;
 $red-solid: #ff0000;
 $pink: pink;
-
+$mardis-gras: #330042;
+$scarlet-gum: #4C3257;
 //*==== UI VARIABLES ====*/
-$bg-dimmer: rgba( $black-solid, .7);
+$bg-dimmer: rgba( $black-solid, .6); // rgba( $black-solid, .6);
 $bg-image-header: url('../gfx/pg_blog_header.jpg');
 
 //*==== CUSTOMIZATION ====*/
 $color-main: $mine-shaft; // $mine-shaft
 $bg-main: $athens-gray; // $athens-gray
 $bg-article: $white-solid; // $white-solid
-$color-accent: #F4003A; // $pacific-blue
+$color-accent: $pacific-blue; // $pacific-blue
 $button-accent: $outer-space; // $outer-space
 $color-headings: darken($color-main, 10%); // darken($color-main, 10%);
 $social-sharing-border: $aqua-haze; // $aqua-haze
