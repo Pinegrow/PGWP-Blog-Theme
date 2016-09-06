@@ -28,3 +28,5 @@ lead: 125%
 
 BROWSER SYNC CONFIG
 browser-sync start --proxy pg-blog.dev --files "/Users/earnoud/Documents/Pinegrow GIT/PGWP-Blog-Theme/**/*" --no-notify --reloadDelay "2000"
+
+zip -r wordpress-functionality-plugin.zip wordpress-functionality-plugin -x "*.DS_Store"

@@ -131,6 +131,9 @@ if ( ! function_exists( 'pg_blog_enqueue_scripts' ) ) :
     wp_deregister_style( 'social_icons' );
     wp_enqueue_style( 'social_icons', get_template_directory_uri() . '/css/social_icons.css', false, null, 'all');
 
+    wp_deregister_style( 'cacbbcbfca' );
+    wp_enqueue_style( 'cacbbcbfca', '//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css', false, null, 'all');
+
     /* Pinegrow generated Enqueue Styles End */
 
     }
