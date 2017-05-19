@@ -34,7 +34,8 @@ body {
 }
 
 p {
-  font-size: 130%;
+  font-size: 115%;
+  line-height: 1.8;
   margin-bottom: 1.6em;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -56,6 +57,7 @@ h5,
 h6 {
   margin-top: 1.5em;
   font-family: $font-main-sans-serif;
+  font-weight: 400;
   color: $color-headings;
 }
 
@@ -64,7 +66,7 @@ strong {
 }
 
 h1 {
-  font-size: 270%;
+  font-size: 270%; // 270%
 }
 
 h2 {
@@ -203,7 +205,7 @@ img.custom-logo {
 
 .site-header h1 {
   color: $white-solid;
-  font-size: 270%;
+  font-size: 250%;
   font-weight: 700;
   text-align: center;
   line-height: 1.1em;
@@ -251,7 +253,7 @@ img.custom-logo {
   color: $regent-gray;
   font-size: 150%;
   margin-top: 0;
-  font-family: $font-main-sans-serif;
+  font-family: $font-ui-sans-serif;
 }
 
 .author-avatar {
@@ -315,13 +317,14 @@ content: "\2758\00a0";
 
 .site-header-title a {
   color: $regent-gray;
+  font-family: $font-ui-sans-serif;
 }
 
 .site-header-meta {
   color: $regent-gray;
   margin-bottom: 10px;
   display: block;
-  font-family: $font-main-sans-serif;
+  font-family: $font-ui-sans-serif;
 }
 
 // SITE INNER
@@ -342,7 +345,7 @@ content: "\2758\00a0";
 // LINKS AND BUTTONS
 
 .small-button {
-  font-family: $font-main-sans-serif;
+  font-family: $font-ui-sans-serif;
   font-size: 60%;
   letter-spacing: 0.2em;
   padding: 1em 2em;
@@ -355,7 +358,7 @@ content: "\2758\00a0";
 }
 
 .big-button {
-  font-family: $font-main-sans-serif;
+  font-family: $font-ui-sans-serif;
   font-size: 100%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -670,7 +673,7 @@ img.desaturate {
 
 .social-sharing {
   text-align: center;
-  font-family: $font-main-sans-serif;
+  font-family: $font-ui-sans-serif;
   display: block;
   padding-bottom: 30px;
   border: 1px solid $social-sharing-border;

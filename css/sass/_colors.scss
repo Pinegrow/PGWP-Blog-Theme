@@ -30,6 +30,6 @@ $bg-main: $athens-gray; // $athens-gray
 $bg-article: $white-solid; // $white-solid
 $color-accent: $pacific-blue; // $pacific-blue
 $button-accent: $outer-space; // $outer-space
-$color-headings: darken($color-main, 10%); // darken($color-main, 10%);
+$color-headings: lighten( $mine-shaft, 0% ); // darken($color-main, 10%);
 $social-sharing-border: $aqua-haze; // $aqua-haze
 $blog-divider-border: $aqua-haze; // $aqua-haze
